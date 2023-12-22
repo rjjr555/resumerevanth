@@ -1,43 +1,47 @@
 body {
     font-family: 'Arial', sans-serif;
     margin: 20px;
+    background-color: #fafafa;
+    color: #333;
 }
 
 header {
-    background-color: #aaa9a6;
-    color: #fff;
+    background-color: #3498db;
+    color: #ecf0f1;
     padding: 20px;
     text-align: center;
 }
 
 h1 {
+    font-size: 2.5em;
+    margin-bottom: 5px;
+}
+
+h2 {
+    font-size: 1.8em;
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 5px;
+}
+
+p {
     margin: 0;
+    font-size: 1.2em;
 }
 
 a {
-    color: #00f;
+    color: #fff; /* Changed to white */
+    text-decoration: none;
 }
 
 section {
     margin-bottom: 20px;
+    background-color: #ecf0f1;
+    padding: 15px;
+    border-radius: 10px;
+    animation: fadeIn 1s ease;
 }
 
-h2 {
-    color: #333;
-    border-bottom: 2px solid #333;
-    padding-bottom: 5px;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-li {
-    margin-bottom: 5px;
-}
-
-/* styles.css */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -45,14 +49,24 @@ table {
 }
 
 td, th {
-    border: 1px solid #ddd;
-    padding: 8px;
+    border: 1px solid #bdc3c7;
+    padding: 10px;
     text-align: left;
 }
 
 th {
-    background-color: #f2f2f2;
+    background-color: #ecf0f1;
 }
 
+/* Add some animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
 
-/* Add additional styling as per your preference */
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
